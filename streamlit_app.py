@@ -1,6 +1,3 @@
-import streamlit
-streamlit.title('🥣 🥗 🐔 🥑🍞My Parents New Healthy Dinner')
-streamlit.header(' 🥣Breakfast Dinner')
-streamlit.text('🥣Omega')
-streamlit.text('🥣pancake')
-streamlit.text('🥣pastery')
+import pandas as pd
+my_text_file=pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
+streamlit.dataframe(my_text_file)
