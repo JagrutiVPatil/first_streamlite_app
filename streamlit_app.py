@@ -7,4 +7,6 @@ streamlit.text(fruitvicy_response)
 streamlit.text(fruitvicy_response.json())
 fruitvicy_normalize=pandas.json_normalize(fruitvicy_response.json())
 streamlit.dataframe(fruitvicy_normalize)
+fruit_choice=streamlit.text_input('what is your favourite fruit',Kiwi)
+streamlit.write('Use entered',fruit_choice)
 
